@@ -24,7 +24,8 @@ app.use(express.json());
 connectDB();
 
 // Dominios permitidos en poliza de CORS
-const allowedWebDomains = [HOST_FRONTEND_DEV, HOST_FRONTEND_PREVIEW];
+// const allowedWebDomains = [HOST_FRONTEND_DEV, HOST_FRONTEND_PREVIEW];
+const allowedWebDomains = [HOST_FRONTEND_PROD];
 
 // Configuración para los CORS: Permitir solo los que esten el el array 'allowebWebDomains'
 const corsOptions = {
